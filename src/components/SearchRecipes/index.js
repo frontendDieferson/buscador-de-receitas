@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import RecipeCard from "../RecipeCard";
 
+import './SearchRecipes.css'
+
+
 function SearchRecipes() {
   const [searchTerm, setSearchTerm] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -22,7 +25,7 @@ function SearchRecipes() {
 
   return(
 
-      <div>
+      <div className="container">
     <input 
         type='text'
         value={searchTerm}
@@ -32,10 +35,14 @@ function SearchRecipes() {
     <button onClick={searchRecipes}>Pesquisar</button>
     {recipes.map(recipe => (
         <RecipeCard 
-            key={recipe.id}
-            title={recipe.title}
-            image={recipe.image}
-            description={recipe.summary}
+        key={recipe.id}
+        imageUrl={recipe.imageUrl}
+        title={recipe.title}
+        author={recipe.author}
+        ingredients={recipe.ingredients}
+        readyInMinutes={recipe.readyInMinutes}
+        instructions={recipe.instructions}
+        servings={recipe.servings}
         
         />
     ))}

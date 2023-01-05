@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App h3 {
+  font-size: 48px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
