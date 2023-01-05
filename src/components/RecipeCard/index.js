@@ -1,6 +1,6 @@
 import React from "react";
 
-function RecipeCard({ id, title, image, description }) {
+function RecipeCard({ title, image, description }) {
   return (
     <div>
       <h3>{title}</h3>
