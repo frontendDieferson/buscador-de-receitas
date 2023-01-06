@@ -1,6 +1,6 @@
 .container-RecipeCard {
     width: 100%;
-    
+   
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,10 +8,10 @@
 }
 
 .content-RecipeCard {
-    width: 900px;
+   width: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border: 1px solid #000;
     margin: 10px;
@@ -26,5 +26,21 @@
 
 .container-RecipeCard h1 {
     font-size: 18px;
-    color: FFF;
+
+    color: #FFF;
+}
+
+.container-RecipeCard span {
+    color: #FFF;
+}
+
+.container-RecipeCard h3 {
+    color: #FFF;
+}
+
+.container-RecipeCard h6 {
+    color: #FFF;
+}
+.container-RecipeCard p {
+    color: #FFF;
 }
