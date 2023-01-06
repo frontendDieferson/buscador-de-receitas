@@ -11,7 +11,7 @@ function SearchRecipes() {
 
   const searchRecipes = () => {
     const apiKey = "9da39c2d195046249239c288c7f050d4";
-    const searchUrl = `https://api.spoonacular.com/recipes/search?query=${searchTerm}&language=pt&apiKey=${apiKey}`;
+    const searchUrl = `https://api.spoonacular.com/recipes/search?query=${searchTerm}&apiKey=${apiKey}`;
 
     axios
       .get(searchUrl)
@@ -32,7 +32,7 @@ function SearchRecipes() {
         </header>
     <input 
         type='text'
-        placeholder="Pesquisa uma receita"
+        placeholder="Pesquise sua receita preferida..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
 
